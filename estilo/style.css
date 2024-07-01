@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
 /*cores fundo gradiente
 #E85280
 #E6658E
@@ -27,6 +29,7 @@ header {
 }
 
 header > h1 {
+    font-family: sofia, sans-serif;
     font-size: 3em;
     color: #d07b94;
     text-align: center;
@@ -45,11 +48,9 @@ nav {
 
 nav > a {
     margin-left: 0;
-    
     padding: 10px;
     font-size: 1em;
     text-decoration: none;
-    border: 1px solid black;
     justify-content: center;
     color: white;
 }
