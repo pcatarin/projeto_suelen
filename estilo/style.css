@@ -12,6 +12,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,9 +29,26 @@ header {
     
 }
 
-header > h1 {
+#title {
+    display: flex;
+    justify-content: space-around;
+}
+
+#img-logo {
+    padding: 0px 0px;
+    border-radius: 50%;
+    
+    box-shadow: 1px 2px 6px 2px #00000099;
+}
+
+#img-logo2 {
+    display: none;
+}
+
+header  h1 {
     font-family: sofia, sans-serif;
     font-size: 3em;
+    padding: 0px 10px;
     color: #d07b94;
     text-align: center;
     text-shadow: 3px 3px 8px #000000c2;
@@ -67,7 +85,8 @@ main {
     border-bottom-right-radius: 5px;
 }
 
-img {
+#img-sobre {
     display: block;
     margin: auto;
+    padding: 20px;
 }
