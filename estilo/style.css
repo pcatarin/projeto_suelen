@@ -62,6 +62,7 @@ nav {
     padding: 10px;
     margin-top: 36px;
     
+    
 }
 
 nav > a {
@@ -83,6 +84,16 @@ main {
     box-shadow: 2px 3px 8px 3px #00000063;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+main > section > h1 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
 }
 
 #img-sobre {
