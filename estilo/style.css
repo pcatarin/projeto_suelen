@@ -54,9 +54,11 @@ nav > a {
 
 main {
     background-color: rgb(239, 187, 220);
-    width: 650px;
+    min-width: 300px;
+    max-width: 1000px;
     height: 1000px;
     margin: 5px auto;
+    padding: 20px;
     box-shadow: 2px 3px 8px 3px #00000063;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
