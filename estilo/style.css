@@ -222,6 +222,24 @@ section > article .text2 {
     font-size: 1.5rem;
 }
 
+.box > ul {
+    width: auto;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #6b015d70;
+    columns: 2;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.box > ul > li {
+    list-style: none;
+}
+
+.box > ul > li > a {
+    text-decoration: none;
+}
 
 
 
