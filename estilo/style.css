@@ -212,14 +212,14 @@ header {
 .text-hero {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 25px;
 }
 
 .text-hero {
     font-size: 1rem;
     left: 10%;
     right: 10%;
-    top: 15%;
+    top: 13%;
     bottom: 15%;
     text-align: center;
     
