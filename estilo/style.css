@@ -6,6 +6,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
 
+/*Cores azul
+#26354C
+#03535E
+#4C8889
+#84A9A2
+#BAB1AC
+*/
+:root
+
 /*cores fundo gradiente
 #E85280
 #E6658E
@@ -20,7 +29,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #ea1c31, #B77FB5, #EAA3E7);
+    background-color: #BAB1AC;
     background-image: ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: auto;
@@ -32,7 +41,7 @@ header {
     height: 68px;
     width: auto;
     text-align: center;/*Caso o text-align center não funcione aqui era só colocar em cada elemento de texto individualmente*/
-    /*background-color: rgb(147, 21, 21);*/
+    background-color: #4C8889;
     box-shadow: 0px 2px 7px 2px #0000004d;
     
     
@@ -67,7 +76,7 @@ header {
     height: 24px;
     font-size: 2em;
     justify-content: center;
-    color: #ac85f9;
+    color: #26354C;
     text-align: center;
     text-shadow: 3px 3px 8px #090909c2;
 }
@@ -77,7 +86,7 @@ header {
     width: auto;
     height: 24px;
     font-size: 2em;
-    color: #ac85f9;
+    color: #26354C;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -229,7 +238,7 @@ section > article > div > h3 {
     font-family: "IM Fell DW Pica", serif;
     font-weight: 700;
     font-style: normal;
-    color: #350914;
+    color: #092035;
     font-size: 1.5rem;
 }
 
@@ -245,7 +254,7 @@ section > article .text2 {
     width: auto;
     height: 125px;
     border-radius: 10px;
-    background-color: #6b015d70;
+    background-color: #84A9A2;
     columns: 2;
     margin: 10px;
     padding: 10px;
