@@ -204,11 +204,7 @@ header {
 #menu_desktop {
     display: none;    
 }
-*
-*
-*
-*
-*
+
 
 /*Estilização da seção hero inicio*/
 #hero {
@@ -261,13 +257,9 @@ section#hero h2 {
     
 }
 /*Estilização da seção hero fim*/
-*
-*
-*
-*
-*
-*
-*
+
+
+
 /*Estilização do box-service inicio*/
 .box-service > ul {
     width: auto;
@@ -292,10 +284,7 @@ section#hero h2 {
     color: #0B0B0B;
 }
 /*Estilização do box-service*/
-*
-*
-*
-*
+
 
 
 
