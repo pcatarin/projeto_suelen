@@ -236,7 +236,9 @@ header {
     bottom: 0;
     right: 0;
     opacity: 0.4;
-
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 6px 2px #00000094;
 }
 
 section#hero h3 {
@@ -265,25 +267,29 @@ section#hero h2 {
 /*Estilização do box-service inicio*/
 .box-service > ul {
     width: auto;
-    height: 125px;
+    height: auto;
     border-radius: 10px;
-    background-color: #84A9A2;
+    background-color: #84a9a292;
     columns: 2;
-    margin: 20px 5px;
-    padding: 10px;
+    margin: 20px 10px;
+    padding: 5px;
     text-align: justify;
+    box-shadow: 1px 1px 6px 2px #00000094;
 }
 
 .box-service > ul > li {
     list-style: none;
+    list-style-type: '\27A3';
+    list-style-position: inside;
+    
 }
 
 .box-service > ul > li > a {
     font-family: "IM Fell DW Pica", serif;
     font-weight: 400;
     font-style: normal;
-    text-decoration: none;
-    color: #0B0B0B;
+    text-decoration: ;
+    color: #023c60;
 }
 /*Estilização do box-service*/
 
@@ -307,18 +313,19 @@ section#hero h2 {
     font-weight: 400;
     font-style: italic;
     font-size: 1.05rem;
-    color: black;
+    color: #011f31;
     background-color: #4C8889;
     text-align: center;
-    
+    box-shadow: 1px 1px 6px 2px #00000094;
+    text-shadow: 3px 3px 5px #d1dee775;
 }
 
 .sobre img {
     width: 240px;
-    height: 250px;
+    height: 270px;
     border-radius: 10px;
     margin: 10px auto;
-    
+    box-shadow: 1px 1px 6px 2px #00000094;
 } 
 
 
