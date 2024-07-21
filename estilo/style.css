@@ -36,6 +36,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: auto;
     height: 100vh;
+    
 }
 
 header {
@@ -262,34 +263,118 @@ section#hero h2 {
 }
 /*Estilização da seção hero fim*/
 
-
+h2.text-serv {
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #8C0101;
+    letter-spacing: 5px;
+}
 
 /*Estilização do box-service inicio*/
-.box-service > ul {
+h2.text-serv {
+    text-align: center;
+}
+
+section#serv {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
     width: auto;
-    height: auto;
-    border-radius: 10px;
-    background-color: #84a9a292;
-    columns: 2;
-    margin: 20px 10px;
+    height: 300px;
+    margin: 20px 0px;
     padding: 5px;
-    text-align: justify;
-    box-shadow: 1px 1px 6px 2px #00000094;
+    background-color: #ade7e891;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.241);    
 }
 
-.box-service > ul > li {
+div.foto {
+    display: flex;
+    margin: auto 0;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 0;
+    position: relative;
+}
+
+div.foto img {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+div.description {
+    width: 150px;
+    height: auto;
+    margin: auto 0;
+    background-color: #67b2b3;
+    line-height: 30px;
+    left: 0px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    list-style-type: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.description ul {
     list-style: none;
-    list-style-type: '\27A3';
-    list-style-position: inside;
-    
+    font-size: 0.8rem;
+    margin: auto 0;
+    text-decoration: none;
+    transform: translateX(-20%);
+    padding-top: 10px;
 }
 
-.box-service > ul > li > a {
+div.description ul > li > a {
+    text-decoration: none;
+    color: white;
     font-family: "IM Fell DW Pica", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: ;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
     color: #023c60;
+}
+
+li.serv1 {
+    transform: translateX(20px);
+}
+ul > li > img{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+li.serv2 {
+    transform: translateX(15px);
+}
+li.serv3 {
+    transform: translateX(10px);
+}
+li.serv4 {
+    transform: translateX(5px);
+}
+li.serv5 {
+    transform: translateX(0px);
+}
+li.serv9 {
+    transform: translateX(20px);
+}
+li.serv8 {
+    transform: translateX(15px);
+}
+li.serv7 {
+    transform: translateX(10px);
+}
+li.serv6 {
+    transform: translateX(5px);
 }
 /*Estilização do box-service*/
 
@@ -305,7 +390,7 @@ section#hero h2 {
 
 .sobre p {
     width: auto;
-    height: 181px;
+    height: auto;
     padding: 05px 10px 10px 10px;
     margin: 0 10px;
     border-radius: 10px;
@@ -327,6 +412,11 @@ section#hero h2 {
     margin: 10px auto;
     box-shadow: 1px 1px 6px 2px #00000094;
 } 
+
+
+
+
+
 
 
 
