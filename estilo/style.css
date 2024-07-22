@@ -327,7 +327,7 @@ div.description ul {
     margin: auto 0;
     text-decoration: none;
     transform: translateX(-20%);
-    padding-top: 10px;
+    
 }
 
 div.description ul > li > a {
@@ -338,7 +338,7 @@ div.description ul > li > a {
     font-style: bold;
     text-decoration: ;
     color: #023c60;
-    text-shadow: 2px 2px 4px #023c60;
+    /*text-shadow: 2px 2px 4px #023c60;*/
 }
 
 li.serv1 {
@@ -414,6 +414,34 @@ li.serv6 {
     margin: 10px auto;
     box-shadow: 1px 1px 6px 2px #00000094;
 } 
+
+/*Estilização dos serviços*/
+
+.details {
+    margin-top: 60px;
+}
+
+section div.detail {
+    width: auto;
+    height: max-content;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #84A9A2;
+    border-radius: 15px;
+}
+
+section div.detail > p {
+    text-indent: 25px;
+    text-align: justify;
+}
+
+section div.detail > h2 {
+    text-align: center;
+}
 
 
 
