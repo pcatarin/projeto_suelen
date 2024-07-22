@@ -432,11 +432,13 @@ section div.detail {
     align-items: center;
     background-color: #84A9A2;
     border-radius: 15px;
+    gap: 5px;
 }
 
 section div.detail > p {
     text-indent: 25px;
-    text-align: justify;
+    text-align: center;
+    word-spacing: ;
 }
 
 section div.detail > h2 {
