@@ -208,6 +208,11 @@ header {
     display: none;    
 }
 
+main#principal {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 /*Estilização da seção hero inicio*/
 #hero {
