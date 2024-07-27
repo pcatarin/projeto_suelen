@@ -39,7 +39,7 @@ body {
     
 }
 
-/*header {
+header {
     display: flex;
     height: 68px;
     width: auto;
@@ -568,7 +568,7 @@ div.times {
     flex-direction: column;
     margin: 0px 0;
     gap: 15px;
-}*/
+}
 
 
 
