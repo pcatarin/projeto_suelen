@@ -8,36 +8,40 @@
 </head>
 <body>
     <header>
-        <section id="title">
-            <div>
-                <img id="img-logo" src="imagens/logo_menor.png" alt="">
-            </div>
-            <div id="sub-title">
-                <h1>EQUILÍBRIO</h1>
-                <h2>Massagem Terapia</h2>
-            </div>
+        <section class="teste" id="teste">
+            <section id="teste-title">
+                <div>
+                    <img id="img-logo" src="imagens/logo_menor.png" alt="">
+                </div>
+                <div id="teste-sub-title">
+                    <h1>EQUILÍBRIO</h1>
+                    <h2>Massagem Terapia</h2>
+                </div>
+                
+            </section>
+    
+    <!--Neste NAV começa os elementos do menu hamburguer-->
             
+            <nav class="menu_mobile">
+                <button type="button" id="button" onclick="handleClick()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul id="options2" onclick="menuOpen()">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#serv">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+
+
+            </nav>
+            
+    
+    <!--Neste NAV acima termina os elementos do menu hamburguer-->
         </section>
-
-<!--Neste NAV começa os elementos do menu hamburguer-->
-        <nav class="menu_mobile">
-            <input type="checkbox" class="menu-fake">
-
-            <div class="menu-lines">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <ul id="options">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-
-<!--Neste NAV acima termina os elementos do menu hamburguer-->
 
         <nav id="menu_desktop">
             <a href="#">Home</a>
@@ -45,6 +49,8 @@
             <a href="#">Serviços</a>
             <a href="#">Contato</a>
         </nav>
+
+        <div class="overlay" id="overlay"></div>
     </header>
 
     <main id="principal">
@@ -92,7 +98,7 @@
             </div>
         </section>
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
 
             <p>Prazer Suelem... <br> 
             Massoterapeuta à 4 anos atuando em Taubaté e Região. Especialista em lesão muscular, ventosa terapia e liberação miofascial. Atualmente desenvolve o trabalho de diversos procedimentos dentro da massoterapia e consteladora holística.</p>
@@ -189,11 +195,21 @@
             </div>
 
         </section>
+
+        <button>
+            <div class="btn-topo" id="btn-topo">
+                <a href="#teste">Topo</a>
+            </div>
+        </button>
+
+    
          
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>
