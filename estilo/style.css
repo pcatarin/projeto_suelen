@@ -744,34 +744,58 @@ div#btn-topo {
 /*nova estilização seção de serviços em teste*/
 section#serv2 {
     width: auto;
-    height: 300px;
+    height: auto;
     margin: 20px 10px;
     background-color: #4c8889;
-    padding: 10px;
     border-radius: 20px;
+    padding: 20px;
+    display: ;
 }
 
 div.description2 > ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: ;
     flex-wrap: wrap;
     list-style: none;
-    columns: ;
-    row-gap: 20px;
-    column-gap: 20px;
-    display: ;
+    columns: 3;
+    gap: 35px;
+    margin: auto auto 20px auto;
+    padding: 20px;
+
 }
 
 div.description2 > ul > li > a > img {
     width: 50px;
     height: 50px;
     background-color: white;
-    box-shadow: 0px 0px 5px 5px whitesmoke;
     border-radius: 50%;
     justify-content: center;
     text-align: center;
+    position: relative;
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div.description2 > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgb(135, 205, 191);
+    position: relative;
+}
+
+div.description2 .icons-close {
+    display: none;
 }
 
 div.description2 > ul > li > a {
@@ -784,6 +808,8 @@ div.description2 > ul > li > a {
     align-items: center;
     margin: auto;
     padding: 10px;
+    text-decoration: none;
+    
 }
 
 section div.detail-1 {
@@ -803,13 +829,18 @@ section div.detail-1 {
     display: none;
 }
 
+section div.open_detail-1 {
+    display: flex;
+}
+
+
 section div.detail-1 p {
     font-family: "IM Fell DW Pica", serif;
     font-weight: 600;
     font-style: normal;
-    text-indent: 25px;
-    text-align: justify;
-    font-size: 1.4rem;
+    text-indent: ;
+    text-align: center;
+    font-size: 1.2rem;
     color: #092035;
     padding: 10px 10px;
     border: 1px solid rgba(245, 245, 245, 0.428);
@@ -843,135 +874,40 @@ img.img-serv {
     padding: 0 5px;
 }
 
+.box-seta {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 0%;
+    bottom: 0;
+
+}
+
+.box-seta:hover {
+    cursor: pointer;
+}
+
+.seta {
+    position: absolute;
+    top: 18%;
+    right: 0;
+    left: 25%;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border-left: 6px solid black;
+    border-bottom: 6px solid black;
+    transform: rotate(45deg);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 /*fim da estilização teste da nova seção*/
 
-/*teste de serviços em circulo*/
 
-section#circle {
-    margin: 100px auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div#circle-int {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 120px;
-    border: 1px solid black;
-    margin: 50px auto;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-#circle-int::before {
-    content: '';
-    background-image: url('../imagens/yin-yeng.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.4;
-    border-radius: 50%;
-    box-shadow: 1px 1px 6px 2px #00000094;
-}
-
-.log-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    gap: 5px;
-    width: 60px;
-    height: 60px;
-    background: #e9eced;
-    position: absolute;
-    left: -67%;
-    border-radius: 50%;
-    transition: 0.5s;
-    transform: rotate(calc(360deg/9 * var(--i)));
-    transform-origin: 140px;
-}
-
-div#log-circle1 p {
-    position: absolute;
-    transform: rotate(calc(90deg/18 * var(--t)));
-    transform-origin: 60px;
-    left: -10%;
-    display: none;
-}
-
-.log-circle p {
-    font-size: .8rem;
-    margin: auto;
-    position: absolute;
-
-}
-
-.log-circle img {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 70%;
-    margin: auto;
-    border-radius: 50%;
-    object-fit: ;
-    transform: rotate(calc(-360deg/9 * var(--i)));
-}
-/*
-.circle .circle-int .log-circle {
-    transform: rotate(calc(360deg/9 * var(--i)));
-    transform-origin: 150px;
-}
-*/
-div#log-circle1 {
-    
-}
-
-div#log-circle2 {
-    
-}
-
-div#log-circle3 {
-    
-}
-
-div#log-circle4 {
-    
-}
-
-div#log-circle5 {
-    
-}
-
-div#log-circle6 {
-    
-}
-
-div#log-circle7 {
-    
-}
-
-div#log-circle8 {
-    
-}
-
-div#log-circle9 {
-    
-}
 
 
 
