@@ -286,7 +286,7 @@ h2.text-serv {
     font-family: "IM Fell DW Pica", serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-top: 10px;
     color: #8C0101;
     letter-spacing: 5px;
@@ -409,38 +409,134 @@ li.serv6 {
 
 }
 
+.sobre-box {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
 .sobre p {
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 05px 10px 10px 10px;
-    margin: 0 10px;
+    margin: 0 0px;
     border-radius: 10px;
     font-family: "Cousine", monospace;
-    font-weight: 400;
+    font-weight: bolder;
     font-style: italic;
-    font-size: 1.05rem;
-    color: #011f31;
-    background-color: #4C8889;
+    font-size: 1.3rem;
+    color: #000000;
+    /*background-color: #4c888932;*/
     text-align: center;
     box-shadow: 1px 1px 6px 2px #00000094;
     text-shadow: 3px 3px 5px #d1dee775;
+    position: relative;
+    top: -20px;
+}
+
+.sobre p::before {
+    content: '';
+    background-image: url('../imagens/nova_sobre.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 6px 2px #00000094;
 }
 
 .sobre img {
-    width: 240px;
-    height: 270px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     margin: 10px auto;
+    padding: 10px;
     box-shadow: 1px 1px 6px 2px #00000094;
+    opacity: 0.6;
 } 
 
 /*Estilização dos serviços*/
 
-.details {
-    margin-top: 60px;
+/*nova estilização seção de serviços em teste*/
+section#serv2 {
+    width: auto;
+    height: auto;
+    margin: 20px 10px;
+    background-color: #4c8889;
+    border-radius: 20px;
+    padding: 20px;
+    display: ;
 }
 
-section div.detail {
+div.description2 > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    columns: 3;
+    gap: 35px;
+    margin: auto auto 20px auto;
+    padding: 20px;
+
+}
+
+div.description2 > ul > li > a > img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div.description2 > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgb(135, 205, 191);
+    position: relative;
+}
+
+div.description2 .icons-close {
+    display: none;
+}
+
+div.description2 > ul > li > a {
+    display: flex;
+    width: 60px;
+    height: 70px;
+    flex-direction: column;
+    font-size: .8rem;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+section div.detail-1 {
     width: auto;
     height: auto;
     margin: 15px;
@@ -454,18 +550,22 @@ section div.detail {
     border-radius: 15px;
     box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.176);
     border: 1px solid whitesmoke;
+    display: none;
 }
 
-section div.detail p {
+section div.open_detail-1 {
+    display: flex;
+}
+
+
+section div.detail-1 p {
     font-family: "IM Fell DW Pica", serif;
     font-weight: 600;
     font-style: normal;
-    text-indent: 25px;
-    text-align: justify;
-    font-size: 1.4rem;
+    text-indent: ;
+    text-align: center;
+    font-size: 1.2rem;
     color: #092035;
-    /*letter-spacing: 1px;
-    word-spacing: 1px;*/
     padding: 10px 10px;
     border: 1px solid rgba(245, 245, 245, 0.428);
     border-radius: 10px;
@@ -475,10 +575,10 @@ section div.detail p {
     margin-top: 10px;
 }
 
-h2.title-serv {
+h2.title-serv1 {
     font-family: "Jim Nightshade", cursive;
     font-weight: bolder;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin-bottom: 10px;
     letter-spacing: 2px;
     color: #550116;
@@ -497,6 +597,40 @@ img.img-serv {
     border-radius: 20px;
     padding: 0 5px;
 }
+
+.box-seta {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 0%;
+    bottom: 0;
+
+}
+
+.box-seta:hover {
+    cursor: pointer;
+}
+
+.seta {
+    position: absolute;
+    top: 18%;
+    right: 0;
+    left: 25%;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border-left: 6px solid black;
+    border-bottom: 6px solid black;
+    transform: rotate(45deg);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*fim da estilização teste da nova seção*/
+
 
 /*Estilização do campo de contato*/
 
@@ -741,156 +875,58 @@ div#btn-topo {
     border-radius: 50%;
 }
 
-/*nova estilização seção de serviços em teste*/
-section#serv2 {
-    width: auto;
-    height: auto;
-    margin: 20px 10px;
-    background-color: #4c8889;
-    border-radius: 20px;
-    padding: 20px;
-    display: ;
-}
+/*Estilização Depoimentos*/
 
-div.description2 > ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    columns: 3;
-    gap: 35px;
-    margin: auto auto 20px auto;
-    padding: 20px;
-
-}
-
-div.description2 > ul > li > a > img {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    top: -5px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-div.description2 > ul > li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px 5px rgb(135, 205, 191);
-    position: relative;
-}
-
-div.description2 .icons-close {
-    display: none;
-}
-
-div.description2 > ul > li > a {
-    display: flex;
-    width: 60px;
-    height: 70px;
-    flex-direction: column;
-    font-size: .8rem;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
-    text-decoration: none;
-    
-}
-
-section div.detail-1 {
-    width: auto;
-    height: auto;
-    margin: 15px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    column-gap: 5px;
-    align-items: center;
-    background-color: #84A9A2;
-    border-radius: 15px;
-    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.176);
-    border: 1px solid whitesmoke;
-    display: none;
-}
-
-section div.open_detail-1 {
-    display: flex;
-}
-
-
-section div.detail-1 p {
+h2.text-dp {
     font-family: "IM Fell DW Pica", serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
-    text-indent: ;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #092035;
-    padding: 10px 10px;
-    border: 1px solid rgba(245, 245, 245, 0.428);
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.369) ;
-    width: 100%;
-    height: 100%;
+    font-size: 2.4rem;
     margin-top: 10px;
-}
-
-h2.title-serv1 {
-    font-family: "Jim Nightshade", cursive;
-    font-weight: bolder;
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    color: #550116;
+    color: #8C0101;
+    letter-spacing: 5px;
     text-align: center;
-    padding: 0px 15px;
-    border: 1px solid rgba(245, 245, 245, 0.428);
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.369) ;
-    width: 100%;
 }
 
-img.img-serv {
-    display: block;
-    width: 100%;
-    max-height: auto;
-    border-radius: 20px;
-    padding: 0 5px;
+.box-coment {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 10%;
 }
 
-.box-seta {
+.coment-int {
+    margin: auto 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    background-color: #4bb399;
+    border-radius: 5%;
+}
+
+.coment-int img {
+    border-radius: 10%;
+}
+
+.box-seta1 {
     width: 30px;
     height: 30px;
     background-color: white;
     border-radius: 50%;
     position: relative;
     top: 10px;
-    left: 0%;
+    left: 36%;
     bottom: 0;
 
 }
 
-.box-seta:hover {
+.box-seta1:hover {
     cursor: pointer;
 }
 
-.seta {
+.seta1 {
     position: absolute;
     top: 18%;
     right: 0;
@@ -905,7 +941,83 @@ img.img-serv {
     border-bottom-right-radius: 5px;
 }
 
-/*fim da estilização teste da nova seção*/
+.box-seta2 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -19px;
+    left: 60%;
+    bottom: 0;
+
+}
+
+.box-seta2:hover {
+    cursor: pointer;
+}
+
+.seta2 {
+    position: absolute;
+    top: 18%;
+    right: 0;
+    left: 5%;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border-left: 6px solid black;
+    border-bottom: 6px solid black;
+    transform: rotate(-135deg);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*estilização local*/
+
+h2.text-local {
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.4rem;
+    margin-top: 10px;
+    color: #8C0101;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.box-local {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.box-local img {
+    width: 100%;
+    height: 100%;
+    
+    padding: 0px;
+}
+
+
+.end {
+    width: 100%;
+    height: auto;
+    padding: 05px 10px 10px 10px;
+    margin: 0 0px;
+    border-radius: 10px;
+    font-family: "Cousine", monospace;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1rem;
+    color: #000000;
+    /*background-color: #4c888932;*/
+    text-align: center;
+    box-shadow: 1px 1px 6px 2px #00000094;
+    text-shadow: 3px 3px 5px #d1dee775;
+    
+}
+
 
 
 
