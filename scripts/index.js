@@ -10,6 +10,8 @@ const serv_open6 = document.getElementById('serv6-teste')
 const serv_open7 = document.getElementById('serv7-teste')
 const serv_open8 = document.getElementById('serv8-teste')
 const serv_open9 = document.getElementById('serv9-teste')
+const serv_open10 = document.getElementById('serv10-teste')
+const serv_open11 = document.getElementById('serv11-teste')
 const card1 = document.getElementById('servico1-1')
 const card2 = document.getElementById('servico2-2')
 const card3 = document.getElementById('servico3-3')
@@ -19,6 +21,8 @@ const card6 = document.getElementById('servico6-6')
 const card7 = document.getElementById('servico7-7')
 const card8 = document.getElementById('servico8-8')
 const card9 = document.getElementById('servico9-9')
+const card10 = document.getElementById('servico10-10')
+const card11 = document.getElementById('servico11-11')
 const back_button1 = document.getElementById('box-seta1')
 const back_button2 = document.getElementById('box-seta2')
 const back_button3 = document.getElementById('box-seta3')
@@ -28,6 +32,8 @@ const back_button6 = document.getElementById('box-seta6')
 const back_button7 = document.getElementById('box-seta7')
 const back_button8 = document.getElementById('box-seta8')
 const back_button9 = document.getElementById('box-seta9')
+const back_button10 = document.getElementById('box-seta10')
+const back_button11 = document.getElementById('box-seta11')
 const icons = document.getElementById('icons')
 
 
@@ -94,6 +100,16 @@ serv_open9.addEventListener('click', ()=>{
     icons.classList.add('icons-close')
 })
 
+serv_open10.addEventListener('click', ()=>{
+    card10.classList.add('open_detail-1')
+    icons.classList.add('icons-close')
+})
+
+serv_open11.addEventListener('click', ()=>{
+    card11.classList.add('open_detail-1')
+    icons.classList.add('icons-close')
+})
+
 back_button1.addEventListener('click', ()=>{
     card1.classList.remove('open_detail-1')
     icons.classList.remove('icons-close')
@@ -136,5 +152,15 @@ back_button8.addEventListener('click', ()=>{
 
 back_button9.addEventListener('click', ()=>{
     card9.classList.remove('open_detail-1')
+    icons.classList.remove('icons-close')
+})
+
+back_button10.addEventListener('click', ()=>{
+    card10.classList.remove('open_detail-1')
+    icons.classList.remove('icons-close')
+})
+
+back_button11.addEventListener('click', ()=>{
+    card11.classList.remove('open_detail-1')
     icons.classList.remove('icons-close')
 })

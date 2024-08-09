@@ -8,6 +8,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*Cores azul
 #26354C
 #03535E
@@ -402,41 +404,46 @@ li.serv6 {
 /*Estilização da section sobre*/
 
 .sobre {
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 10px;
+    padding: 0;
 }
 
 .sobre-box {
     width: 100%;
-    height: 100%;
-    margin: 10px;
-    padding: 10px;
+    height: fit-content;
+    padding: 0px;
     position: relative;
+    background-color: #0c0c0c;
+    border-radius: 10px;
 }
 
 .sobre p {
     width: 100%;
-    height: auto;
-    padding: 05px 10px 10px 10px;
-    margin: 0 0px;
+    height: 100%;
+    /*padding: 05px 10px 0px 10px;*/
+    margin-top: 0px;
     border-radius: 10px;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
     font-family: "Cousine", monospace;
     font-weight: bolder;
     font-style: italic;
     font-size: 1.3rem;
     color: #000000;
-    /*background-color: #4c888932;*/
+    background-color: #318182f3;
     text-align: center;
     box-shadow: 1px 1px 6px 2px #00000094;
     text-shadow: 3px 3px 5px #d1dee775;
     position: relative;
-    top: -20px;
+    top: 0px;
 }
 
-.sobre p::before {
+/*.sobre p::before {
     content: '';
     background-image: url('../imagens/nova_sobre.jpeg');
     background-size: cover;
@@ -452,15 +459,17 @@ li.serv6 {
     border-bottom-right-radius: 10px;
     box-shadow: 1px 1px 6px 2px #00000094;
 }
-
+*/
 .sobre img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    margin: 10px auto;
-    padding: 10px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    margin: 0px auto;
+    padding: 0px;
     box-shadow: 1px 1px 6px 2px #00000094;
-    opacity: 0.6;
+    opacity: 0.9;
 } 
 
 /*Estilização dos serviços*/
@@ -559,8 +568,8 @@ section div.open_detail-1 {
 
 
 section div.detail-1 p {
-    font-family: "IM Fell DW Pica", serif;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     font-style: normal;
     text-indent: ;
     text-align: center;
@@ -891,6 +900,7 @@ h2.text-dp {
 .box-coment {
     width: auto;
     height: auto;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -906,8 +916,30 @@ h2.text-dp {
     border-radius: 5%;
 }
 
-.coment-int img {
+.coment .box-coment div img {
     border-radius: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+img.img-coment1 {
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#coment7, #coment3, #coment4, #coment5, #coment6 {
+    display: none;
+}
+
+.coment .box-coment div.coment2-ocult {
+    display: none;
+}
+
+.coment .box-coment div.coment3-revel {
+    display: inline-block;
 }
 
 .box-seta1 {
