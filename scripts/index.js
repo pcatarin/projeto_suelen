@@ -36,6 +36,54 @@ const back_button10 = document.getElementById('box-seta10')
 const back_button11 = document.getElementById('box-seta11')
 const icons = document.getElementById('icons')
 
+//funcionamento dos depoimentos
+let selection = document.querySelectorAll('.radio-btn')
+let prev = document.querySelector('#prev')
+let next = document.querySelector('#next')
+let size = selection.length
+let marcado1 = document.getElementById('label1')
+let marcado2 = document.getElementById('label2')
+
+let count = 1
+document.getElementById('radio1').checked = true;
+
+setInterval(function(){
+    nextImage()
+},4000)
+
+function nextImage(){
+    count++;
+    if(count>6){
+        count=1;
+    }
+    document.getElementById('radio'+count).checked = true;
+}
+
+selection[0].checked = true
+
+
+
+/*for(i = 0 ; i < check.length ; i++){
+    if(i < check.length){
+        i++
+        console.log(check[i])
+        
+    }
+}*/
+
+
+next.onclick = () => {
+    
+}
+
+prev.onclick = () => { 
+    
+}
+
+
+
+
+ //final do funcionamento dos depoimentos
 
 function handleClick() {
     button.classList.toggle('active')

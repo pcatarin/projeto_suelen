@@ -47,7 +47,7 @@ header {
     top: 0;
     display: flex;
     height: 68px;
-    width: 100vw;
+    width: 100%;
     text-align: center;/*Caso o text-align center não funcione aqui era só colocar em cada elemento de texto individualmente*/
     background-color: #4c8889;
     box-shadow: 0px 2px 7px 2px #0000004d; 
@@ -289,117 +289,12 @@ h2.text-serv {
     font-weight: 900;
     font-style: normal;
     font-size: 2.4rem;
-    margin-top: 10px;
+    margin-top: 60px;
     color: #8C0101;
     letter-spacing: 5px;
 }
 
 /*Estilização do box-service inicio*/
-h2.text-serv {
-    text-align: center;
-}
-
-section#serv {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: auto;
-    height: 300px;
-    margin: 20px 0px;
-    padding: 5px;
-    background-color: #ade7e891;
-    border-radius: 20px;
-    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.241);    
-}
-
-div.foto {
-    display: flex;
-    margin: auto 0;
-    border-radius: 20px;
-    padding: 0px;
-    margin: 0;
-    position: relative;
-}
-
-div.foto img {
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-div.description  {
-    width: 150px;
-    height: auto;
-    margin: auto 0;
-    background-color: #67b2b3;
-    line-height: 30px;
-    left: 0px;
-    border-top-left-radius: 150px;
-    border-bottom-left-radius: 150px;
-    list-style-type: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-div.description > ul {
-    list-style: none;
-    font-size: 0.8rem;
-    margin: auto 0;
-    text-decoration: none;
-    transform: translateX(-20%);
-    
-}
-
-div.description > ul > li > a {
-    text-decoration: none;
-    
-    font-family: "IM Fell DW Pica", serif;
-    font-weight: 900;
-    font-style: bold;
-    text-decoration: ;
-    color: #023c60;
-    /*text-shadow: 2px 2px 4px #023c60;*/
-}
-
-li.serv1 {
-    transform: translateX(20px);
-}
-ul > li > img{
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 5px 5px whitesmoke;
-    border-radius: 50%;
-    position: relative;
-    top: 5px;
-    left: -5px;
-}
-li.serv2 {
-    transform: translateX(15px);
-}
-li.serv3 {
-    transform: translateX(10px);
-}
-li.serv4 {
-    transform: translateX(5px);
-}
-li.serv5 {
-    transform: translateX(0px);
-}
-li.serv9 {
-    transform: translateX(20px);
-}
-li.serv8 {
-    transform: translateX(15px);
-}
-li.serv7 {
-    transform: translateX(10px);
-}
-li.serv6 {
-    transform: translateX(5px);
-}
-/*Estilização do box-service*/
 
 /*Estilização da section sobre*/
 
@@ -475,6 +370,10 @@ li.serv6 {
 /*Estilização dos serviços*/
 
 /*nova estilização seção de serviços em teste*/
+h2.text-serv {
+    text-align: center;
+}
+
 section#serv2 {
     width: auto;
     height: auto;
@@ -641,91 +540,7 @@ img.img-serv {
 /*fim da estilização teste da nova seção*/
 
 
-/*Estilização do campo de contato*/
 
-h2.text-cont {
-    font-family: "IM Fell DW Pica", serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 3rem;
-    margin: 50px;
-    color: #8C0101;
-    letter-spacing: 6px;
-    text-align: center;
-}
-
-section#contact {
-    width: auto;
-    height: auto;
-    margin: 15px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    column-gap: 5px;
-    align-items: center;
-    background-color: #4bb399;
-    border-radius: 15px;
-    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.176);
-    border: 1px solid whitesmoke;
-}
-
-section#contact img.img-contact {
-    display: block;
-    width: 50%;
-    max-height: auto;
-    border-radius: 20px;
-    margin: 20px 0;
-    padding: 0 5px;
-}
-
-div.tel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    
-}
-
-div.tel a {
-    text-decoration: none;
-    color: #011f31;
-    font-weight: bold;
-    text-align: left;
-}
-
-div.sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px 0;
-    gap: 15px;  
-}
-
-div.sociais a {
-    text-decoration: none;
-    color: #011f31;
-    font-weight: bold;
-    text-align: start;
-}
-
-
-
-div.tel img , div.sociais img {
-    width: 50px;
-    height: 50px;
-}
-
-div.times {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 0;
-    gap: 15px;
-}
 
 /*teste de menu hamburguer com JS*/
 
@@ -891,66 +706,58 @@ h2.text-dp {
     font-weight: 900;
     font-style: normal;
     font-size: 2.4rem;
-    margin-top: 10px;
+    margin-top: 60px;
     color: #8C0101;
     letter-spacing: 5px;
     text-align: center;
 }
 
-.box-coment {
-    width: auto;
-    height: auto;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
+.coment {
+    margin: 0 auto;
+    width: 100vh;
+    max-width: 400px;
+    height: 400px;
     overflow: hidden;
+    gap: 0px;
+    position: relative;
+    
+    
+}
+
+
+.coments {
+    width: 400%;
+    height: 450px;
+    display: flex;
+    gap: 0px;
+    margin: 20px auto;
+}
+
+.slides {
+    margin: 0;
+    width: 25%;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.slides > img {
+    margin: 0;
+    padding: 0 15px;
+    width: 400px;
+    height: 300px;
     border-radius: 10%;
 }
 
-.coment-int {
-    margin: auto 10px;
-    padding: 10px;
-    width: auto;
-    height: auto;
-    background-color: #4bb399;
-    border-radius: 5%;
-}
-
-.coment .box-coment div img {
-    border-radius: 10%;
-    width: 100%;
-    height: 100%;
-}
-
-img.img-coment1 {
-    border-radius: 10%;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-#coment7, #coment3, #coment4, #coment5, #coment6 {
-    display: none;
-}
-
-.coment .box-coment div.coment2-ocult {
-    display: none;
-}
-
-.coment .box-coment div.coment3-revel {
-    display: inline-block;
-}
 
 .box-seta1 {
     width: 30px;
     height: 30px;
     background-color: white;
     border-radius: 50%;
-    position: relative;
-    top: 10px;
-    left: 36%;
-    bottom: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 0%;
+   
 
 }
 
@@ -978,11 +785,9 @@ img.img-coment1 {
     height: 30px;
     background-color: white;
     border-radius: 50%;
-    position: relative;
-    top: -19px;
-    left: 60%;
-    bottom: 0;
-
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
 }
 
 .box-seta2:hover {
@@ -1003,6 +808,179 @@ img.img-coment1 {
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.radio-btn {
+    display: none;
+    position: ;
+    bottom: 0px;
+    left: 20%;
+}
+
+
+div.control-navigation {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    bottom: 0px;
+}
+
+.manual-btn {
+    border: 2px solid rgb(100, 93, 93);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+input#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: white;
+}
+input#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: white;
+}
+input#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: white;
+}
+input#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: white;
+}
+input#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: white;
+}
+input#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: white;
+}
+
+input#radio1:checked ~ #coment1 {
+    margin-left: 0;
+}
+
+input#radio2:checked ~ #coment1 {
+    margin-left: -25.2%;
+}
+input#radio3:checked ~ #coment1 {
+    margin-left: -50%;
+}
+input#radio4:checked ~ #coment1 {
+    margin-left: -75%;
+}
+input#radio5:checked ~ #coment1 {
+    margin-left: -100%;
+}
+input#radio6:checked ~ #coment1 {
+    margin-left: -125%;
+}
+
+/*Estilização do campo de contato*/
+
+h2.text-cont {
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 70px 50px;
+    color: #8C0101;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+section#contact {
+    width: auto;
+    height: auto;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    column-gap: 5px;
+    align-items: center;
+    background-color: #4bb399;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.176);
+    border: 1px solid whitesmoke;
+}
+
+section#contact img.img-contact {
+    display: block;
+    width: 50%;
+    max-height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 0 5px;
+}
+
+div.tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+div.tel a {
+    text-decoration: none;
+    color: #011f31;
+    font-weight: bold;
+    text-align: left;
+}
+
+div.sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 15px;  
+}
+
+div.sociais a {
+    text-decoration: none;
+    color: #011f31;
+    font-weight: bold;
+    text-align: start;
+}
+
+
+
+div.tel img , div.sociais img {
+    width: 50px;
+    height: 50px;
+}
+
+div.times {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0;
+    gap: 15px;
+}
+
+
 
 /*estilização local*/
 
