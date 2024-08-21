@@ -188,7 +188,7 @@ nav ul#options2 {
     right: -5px;
     top: -34px;
     width: 0px;
-    height: 300px;
+    height: 350px;
     padding-top: 100px;
     background-color: #26354cc4;
     border-top-left-radius: 10px;
@@ -805,19 +805,7 @@ button.active span:nth-child(3) {
 }
 
 /*teste de menu hamburguer*/
-div#btn-topo {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 10px;
-    bottom: 10px;
-    width: 50px;
-    height: 50px;
-    background-color: #bab1acc6;
-    color: #26354C;
-    border-radius: 50%;
-}
+
 
 /*Estilização Depoimentos*/
 
@@ -1153,6 +1141,58 @@ h2.text-local {
     box-shadow: 1px 1px 6px 2px #00000094;
     text-shadow: 3px 3px 5px #d1dee775;
     
+}
+
+/*botão topo*/
+div#btn-topo {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    background-color: #bab1acc6;
+    color: #26354C;
+    border-radius: 50%;
+}
+
+div#btn-whatts {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #bab1acc6;
+    color: ;
+    border-radius: 50%;
+}
+
+div#btn-whatts > a > img {
+    width: 50px;
+    height: 50px;
+}
+
+/*Rodapé*/
+
+#footer {
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+}
+
+#rodape h5, p {
+    color: white;
+    margin: 10px 10px 0 10px;
+    padding: 10px 0 0 0;
+}
+#rodape p {
+    margin: 0px 10px 0 10px;
+    padding: 0px;
 }
 
 
