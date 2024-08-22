@@ -1157,13 +1157,44 @@ div#btn-topo {
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 10px;
-    bottom: 70px;
-    width: 50px;
-    height: 50px;
-    background-color: #bab1acc6;
+    right: 15px;
+    bottom: 80px;
+    width: 45px;
+    height: 45px;
+    background-color: #bab1ac04;
     color: #26354C;
-    border-radius: 50%;
+    border-top-left-radius: 0%;
+    /*border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 35%;
+    border-top: 5px solid black;
+    border-left: 5px solid black;*/
+    transform: rotate(45deg);
+}
+#seta-topo {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 35%;
+    border-top: 5px solid rgb(133, 35, 35);
+    border-left: 5px solid rgb(133, 37, 37);
+    transform: rotate(0deg);
+    width: 35px;
+    height: 35px;
+    
+}
+#seta-topo p {
+    transform: rotate(-45deg);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #243939;
+    font-weight: bolder;
+}
+div#btn-topo > a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: black;
 }
 
 div#btn-whatts {
@@ -1171,18 +1202,23 @@ div#btn-whatts {
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 10px;
-    bottom: 10px;
+    right: 15px;
+    bottom: 15px;
     width: 50px;
     height: 50px;
-    background-color: #bab1acc6;
+    background: transparent;
     color: ;
     border-radius: 50%;
+
 }
 
 div#btn-whatts > a > img {
     width: 50px;
     height: 50px;
+}
+div#btn-whatts > a {
+    color: #315050;
+    text-decoration: none;
 }
 
 /*Rodapé*/
