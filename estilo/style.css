@@ -241,7 +241,54 @@ button.active span:nth-child(3) {
 /*teste de menu hamburguer*/
 
 #menu_desktop {
-    display: none;    
+    display: none;
+        
+}
+#menu_desktop > a {
+    color: #f4eeee;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 10px;
+    border-bottom: 3px solid black;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    /*box-shadow: 0px 0px 2px 2px black;*/
+    padding: 2px;
+}
+
+@media screen and (min-width: 600px) {
+    #menu_desktop {
+        display: flex;
+        z-index: 999;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        row-gap: 10px;
+        border: 0;
+        background: transparent;
+        margin-right: 10px;
+        padding: 0px 0px;
+        gap: 10px;
+        text-decoration: none;
+    }
+    #menu_desktop > a {
+        color: #f4eeee;
+        text-decoration: none;
+        list-style: none;
+        border-radius: 10px;
+        border-bottom: 3px solid black;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        /*box-shadow: 0px 0px 2px 2px black;*/
+        padding: 2px;
+    }
+    nav button#button {
+        display: none;
+    }
 }
 
 main#principal {
@@ -273,7 +320,7 @@ main#principal {
 
 #hero::before {
     content: '';
-    background-image: url('../imagens/yoga.jpg');
+    background-image: url('../imagens/logo_principal.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -282,7 +329,7 @@ main#principal {
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 0.4;
+    opacity: 0.3;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 1px 1px 6px 2px #00000094;
@@ -1152,7 +1199,19 @@ h2.text-local {
 }
 
 /*botão topo*/
+@keyframes view3 {
+    from{
+        opacity: 0;
+        scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
 div#btn-topo {
+    opacity: 0;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -1170,6 +1229,11 @@ div#btn-topo {
     border-top: 5px solid black;
     border-left: 5px solid black;*/
     transform: rotate(45deg);
+    animation: view3 linear forwards;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-timeline: view();
+    animation-range: entry 100% cover 110%;
+    scroll-behavior: auto;
 }
 #seta-topo {
     border-top-left-radius: 0%;
@@ -1190,6 +1254,7 @@ div#btn-topo {
     margin-left: 5px;
     color: #243939;
     font-weight: bolder;
+    font-size: .8rem;
 }
 div#btn-topo > a {
     text-decoration: none;

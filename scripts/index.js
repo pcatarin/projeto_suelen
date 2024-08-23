@@ -12,6 +12,7 @@ const serv_open8 = document.getElementById('serv8-teste')
 const serv_open9 = document.getElementById('serv9-teste')
 const serv_open10 = document.getElementById('serv10-teste')
 const serv_open11 = document.getElementById('serv11-teste')
+const serv_open12 = document.getElementById('serv12-teste')
 const card1 = document.getElementById('servico1-1')
 const card2 = document.getElementById('servico2-2')
 const card3 = document.getElementById('servico3-3')
@@ -23,6 +24,7 @@ const card8 = document.getElementById('servico8-8')
 const card9 = document.getElementById('servico9-9')
 const card10 = document.getElementById('servico10-10')
 const card11 = document.getElementById('servico11-11')
+const card12 = document.getElementById('servico12-12')
 const back_button1 = document.getElementById('box-seta1')
 const back_button2 = document.getElementById('box-seta2')
 const back_button3 = document.getElementById('box-seta3')
@@ -34,6 +36,7 @@ const back_button8 = document.getElementById('box-seta8')
 const back_button9 = document.getElementById('box-seta9')
 const back_button10 = document.getElementById('box-seta10')
 const back_button11 = document.getElementById('box-seta11')
+const back_button12 = document.getElementById('box-seta12')
 const icons = document.getElementById('icons')
 
 //funcionamento dos depoimentos
@@ -224,6 +227,17 @@ serv_open11.addEventListener('click', ()=>{
     },150)
 })
 
+serv_open12.addEventListener('click', ()=>{
+    //card11.classList.add('open_detail-1')
+    //icons.classList.add('icons-close')
+    card12.style.animationName = 'entrar'
+    icons.style.animationName = 'sair'
+    setTimeout(() => {
+        card12.classList.add('open_detail-1')
+        icons.classList.add('icons-close')
+    },150)
+})
+
 back_button1.addEventListener('click', ()=>{
     //card1.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
@@ -345,9 +359,22 @@ back_button11.addEventListener('click', ()=>{
     },300)
 })
 
+back_button12.addEventListener('click', ()=>{
+    //card11.classList.remove('open_detail-1')
+    //icons.classList.remove('icons-close')
+    card12.style.animationName = 'entrar2'
+    icons.style.animationName = 'entrar2'
+    setTimeout(() => {
+        card12.classList.remove('open_detail-1')
+        icons.classList.remove('icons-close')
+    },300)
+})
+
 //funcionamento do scroll suave
 
 let menulinks = document.querySelectorAll('#options2 a[href^="#"]')
+let menulinks2 = document.querySelectorAll('#menu_desktop a[href^="#"]')
+let btntop = document.querySelectorAll('#topo a[href^="#"]')
 
 function getDistanceFromTheTop(element) {
     const id = element.getAttribute("href");
@@ -370,6 +397,21 @@ function scrollToSection(event) {
     console.log(section.offsetTop);
 }
 
+function scrollToSectionTop(event) {
+    event.preventDefault();
+    const element = event.target;
+    const id = element.getAttribute("href");
+    const section = document.querySelector(id);
+}
+
 menulinks.forEach((link) => {
     link.addEventListener('click', scrollToSection)
 })
+menulinks2.forEach((link) => {
+    link.addEventListener('click', scrollToSection)
+})
+btntop.forEach((link) => {
+    link.addEventListener('click', nativeScroll2)
+})
+
+console.log(btntop)
