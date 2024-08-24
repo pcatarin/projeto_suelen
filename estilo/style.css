@@ -105,12 +105,15 @@ div.overlay.overlay-open {
 
 section#teste-title {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-family: "Jim Nightshade", cursive;
     font-size: 1.5em;
     color: #26354C;
-    row-gap: 20px;
+    row-gap: 30px;
+}
+div#teste-sub-title {
+    margin-left: 30px;
 }
 
 
