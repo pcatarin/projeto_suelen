@@ -114,7 +114,7 @@ serv_open1.addEventListener('click', ()=>{
     setTimeout(() => {
         card1.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open2.addEventListener('click', ()=>{
@@ -125,7 +125,7 @@ serv_open2.addEventListener('click', ()=>{
     setTimeout(() => {
         card2.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open3.addEventListener('click', ()=>{
@@ -136,7 +136,7 @@ serv_open3.addEventListener('click', ()=>{
     setTimeout(() => {
         card3.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open4.addEventListener('click', ()=>{
@@ -147,7 +147,7 @@ serv_open4.addEventListener('click', ()=>{
     setTimeout(() => {
         card4.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open5.addEventListener('click', ()=>{
@@ -158,7 +158,7 @@ serv_open5.addEventListener('click', ()=>{
     setTimeout(() => {
         card5.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open6.addEventListener('click', ()=>{
@@ -169,7 +169,7 @@ serv_open6.addEventListener('click', ()=>{
     setTimeout(() => {
         card6.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open7.addEventListener('click', ()=>{
@@ -180,7 +180,7 @@ serv_open7.addEventListener('click', ()=>{
     setTimeout(() => {
         card7.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open8.addEventListener('click', ()=>{
@@ -191,7 +191,7 @@ serv_open8.addEventListener('click', ()=>{
     setTimeout(() => {
         card8.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open9.addEventListener('click', ()=>{
@@ -202,7 +202,7 @@ serv_open9.addEventListener('click', ()=>{
     setTimeout(() => {
         card9.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open10.addEventListener('click', ()=>{
@@ -213,7 +213,7 @@ serv_open10.addEventListener('click', ()=>{
     setTimeout(() => {
         card10.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open11.addEventListener('click', ()=>{
@@ -224,7 +224,7 @@ serv_open11.addEventListener('click', ()=>{
     setTimeout(() => {
         card11.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 serv_open12.addEventListener('click', ()=>{
@@ -235,139 +235,139 @@ serv_open12.addEventListener('click', ()=>{
     setTimeout(() => {
         card12.classList.add('open_detail-1')
         icons.classList.add('icons-close')
-    },150)
+    },300)
 })
 
 back_button1.addEventListener('click', ()=>{
     //card1.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card1.style.animationName = 'entrar2'
+    card1.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card1.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button2.addEventListener('click', ()=>{
     //card2.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card2.style.animationName = 'entrar2'
+    card2.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card2.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button3.addEventListener('click', ()=>{
     //card3.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card3.style.animationName = 'entrar2'
+    card3.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card3.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button4.addEventListener('click', ()=>{
     //card4.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card4.style.animationName = 'entrar2'
+    card4.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card4.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button5.addEventListener('click', ()=>{
     //card5.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card5.style.animationName = 'entrar2'
+    card5.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card5.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button6.addEventListener('click', ()=>{
     //card6.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card6.style.animationName = 'entrar2'
+    card6.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card6.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button7.addEventListener('click', ()=>{
     //card7.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card7.style.animationName = 'entrar2'
+    card7.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card7.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button8.addEventListener('click', ()=>{
     //card8.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card8.style.animationName = 'entrar2'
+    card8.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card8.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button9.addEventListener('click', ()=>{
     //card9.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card9.style.animationName = 'entrar2'
+    card9.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card9.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button10.addEventListener('click', ()=>{
     //card10.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card10.style.animationName = 'entrar2'
+    card10.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card10.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button11.addEventListener('click', ()=>{
     //card11.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card11.style.animationName = 'entrar2'
+    card11.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card11.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 back_button12.addEventListener('click', ()=>{
     //card11.classList.remove('open_detail-1')
     //icons.classList.remove('icons-close')
-    card12.style.animationName = 'entrar2'
+    card12.style.animationName = 'sair2'
     icons.style.animationName = 'entrar2'
     setTimeout(() => {
         card12.classList.remove('open_detail-1')
         icons.classList.remove('icons-close')
-    },300)
+    },700)
 })
 
 //funcionamento do scroll suave

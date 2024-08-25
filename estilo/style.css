@@ -554,7 +554,7 @@ div.description2 .icons-close {
     opacity: 0;
     display: ;
     /*animation: sair linear 0.5s forwards;*/
-    animation-duration: 0.5s;
+    animation-duration: 0.9s;
     animation-fill-mode: forwards;
     animation: name duration timing-function delay iteration-count direction fill-mode;
 }
@@ -562,13 +562,12 @@ div.description2 .icons-close {
 @keyframes sair {
     from{
         opacity: 1;
-        
         transform: translateX(0);
+        display: flex;
     }
     to{
         opacity: 0;
-        
-        transform: translateX(-200px);
+        transform: translateX(-300px);
         display: none;
     }
 }
@@ -635,6 +634,16 @@ section div.open_detail-1 {
 @keyframes entrar2 {
     from{
         opacity: 1;
+        transform: translateX(-300px);   
+    }
+    to{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+}
+@keyframes sair2 {
+    from{
+        opacity: 1;
         transform: translateX(0px);   
     }
     to{
@@ -653,9 +662,9 @@ section div.detail-1 p {
     font-size: 1.2rem;
     color: #092035;
     padding: 10px 10px;
-    border: 1px solid rgba(245, 245, 245, 0.428);
+    /*border: 1px solid rgba(245, 245, 245, 0.428);
     border-radius: 10px;
-    box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.369) ;
+    box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.369) ;*/
     width: 100%;
     height: 100%;
     margin-top: 10px;
@@ -670,9 +679,9 @@ h2.title-serv1 {
     color: #550116;
     text-align: center;
     padding: 0px 15px;
-    border: 1px solid rgba(245, 245, 245, 0.428);
+    /*border: 1px solid rgba(245, 245, 245, 0.428);
     border-radius: 10px;
-    box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.369) ;
+    box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.369) ;*/
     width: 100%;
 }
 
@@ -1148,6 +1157,7 @@ div.times {
     flex-direction: column;
     margin: 0px 0;
     gap: 15px;
+    color: rgb(36, 91, 76);
 }
 
 
@@ -1292,19 +1302,96 @@ div#btn-whatts > a {
 /*Rodapé*/
 
 #footer {
-    width: 100vw;
-    height: 100px;
+    width: 100%;
+    height: auto;
     background-color: black;
 }
 
-#rodape h5, p {
+#footer > section > h3 {
     color: white;
-    margin: 10px 10px 0 10px;
-    padding: 10px 0 0 0;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#rodape {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+#direito{
+    padding: 10px;
+}
+#dev {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    align-items: start;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 0 5px;
+    width: max-content;
+}
+#dev h5 > p {
+    margin-left: 0;
+    margin-bottom: px;
+}
+#dev h3 {
+    color: rgb(101, 221, 230);
+}
+#dev a {
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+#credito {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 65%;
+    margin: px 0;
+    flex-wrap: ;
+    padding: 0px 10px;
+}
+#credito a > img {
+    width: 80px;
+}
+#credito a {
+    font-size: .6rem;
+    text-align: justify;
+    width: 80px;
+}
+div#credito ul > li {
+    margin-bottom: 10px;
+    width: auto;
+}
+div#credito ul > li > a {
+    margin: 0px 0;
+    font-size: .7rem;
+    color: white;
+    text-decoration: none;
+}
+div#credito ul {
+    columns: 2;
+    height: min-content;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#credito > h3 {
+    color: rgb(101, 221, 230);
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+#rodape h5 {
+    color: rgb(101, 221, 230);
+    font-size: 1rem;
 }
 #rodape p {
-    margin: 0px 10px 0 10px;
-    padding: 0px;
+    margin-bottom: 10px;
+    color: white;
 }
 
 
