@@ -324,7 +324,7 @@ main#principal {
 #hero::before {
     content: '';
     background-image: url('../imagens/logo_principal.jpeg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -933,7 +933,7 @@ h2.text-dp {
     position: absolute;
     bottom: 50%;
     left: 0%;
-   
+    display: none;
 
 }
 
@@ -964,6 +964,7 @@ h2.text-dp {
     position: absolute;
     bottom: 50%;
     right: 0%;
+    display: none;
 }
 
 .box-seta2:hover {
