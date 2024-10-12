@@ -38,7 +38,7 @@ body {
     background-color: #bab1ac;
     background-image: ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: auto;
+    width: 100vw;
     height: 100vh;
 }
 body {
@@ -81,6 +81,7 @@ section#teste {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    min-width: 300px;
     max-height: 100px;
     padding: 5px;
     box-shadow: 0px 2px 7px 2px #0000004d;
@@ -179,6 +180,7 @@ nav button#button {
     border: 0;
     background: transparent;
     margin-top: 0px;
+    margin-right: 20px;
     padding: 0px 0px;
 }
 
@@ -289,20 +291,31 @@ button.active span:nth-child(3) {
         /*box-shadow: 0px 0px 2px 2px black;*/
         padding: 2px;
     }
+    .localizacao {
+        display: flex;
+        gap: 10%;
+        row-gap: 10%;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
     nav button#button {
         display: none;
     }
 }
 
 main#principal {
-    max-width: 800px;
-    margin: 69px auto 0 auto;
+    max-width: 850px;
+    height: auto;
+    margin: 69px auto 50px auto;
 }
 
 
 /*Estilização da seção hero inicio*/
 #hero {
     width: auto;
+    min-width: 400px;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -324,7 +337,7 @@ main#principal {
 #hero::before {
     content: '';
     background-image: url('../imagens/logo_principal.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -335,7 +348,7 @@ main#principal {
     opacity: 0.3;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 1px 1px 6px 2px #00000094;
+    /*box-shadow: 1px 1px 6px 2px #00000094;*/
 }
 
 section#hero h3 {
@@ -374,12 +387,13 @@ h2.text-serv {
 /*Estilização da section sobre*/
 
 .sobre {
+    width: auto;
     height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 20px ;
     padding: 0;
     opacity: 0;
     animation: view linear 0.5s 0.5s forwards;
@@ -1175,11 +1189,21 @@ h2.text-local {
     letter-spacing: 5px;
     text-align: center;
 }
+.localizacao {
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
 
 .box-local {
-    width: auto;
+    width: 100%;
     height: auto;
-    margin: 5px;
+    max-height: max-content;
+    margin: 20px;
     padding: 5px;
     animation: view linear 1s;
     animation-timeline: view();
@@ -1192,13 +1216,26 @@ h2.text-local {
     
     padding: 0px;
 }
-
+.box-convenio {
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    animation: view linear 1s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.box-convenio img {
+    width: 100%;
+    height: 100%;
+    
+    padding: 0px;
+}
 
 .end {
     width: 100%;
     height: auto;
     padding: 05px 10px 10px 10px;
-    margin: 0 0px;
+    margin: 5px 0px;
     border-radius: 10px;
     font-family: "Cousine", monospace;
     font-weight: bolder;
@@ -1207,9 +1244,9 @@ h2.text-local {
     color: #000000;
     /*background-color: #4c888932;*/
     text-align: center;
-    box-shadow: 1px 1px 6px 2px #00000094;
+    /*box-shadow: 1px 1px 6px 2px #00000094;
     text-shadow: 3px 3px 5px #d1dee775;
-    
+    */
 }
 
 /*botão topo*/
@@ -1302,9 +1339,11 @@ div#btn-whatts > a {
 
 /*Rodapé*/
 
-#footer {
+footer#footer {
     width: 100%;
+    min-width: 400px;
     height: auto;
+    margin: 10px 0;
     background-color: black;
 }
 
@@ -1319,8 +1358,10 @@ div#btn-whatts > a {
     justify-content: start;
     flex-direction: row-reverse;
     align-items: flex-start;
+    margin: 5px;
 }
 #direito{
+    margin: 5px;
     padding: 10px;
 }
 #dev {
