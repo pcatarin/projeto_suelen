@@ -1217,6 +1217,7 @@ h2.text-local {
     padding: 0px;
 }
 .box-convenio {
+    display: none;
     width: 80%;
     height: 100%;
     margin: 20px auto;
