@@ -207,7 +207,8 @@ nav ul#options2 {
     width: 0px;
     height: 350px;
     padding-top: 100px;
-    background-color: #26354cc4;
+    background-color: var(--seaweed);
+    opacity: 0.7;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     gap: 20px;
@@ -236,7 +237,7 @@ button span {
     height: 5px;
     border-radius: 10px;
     background: #f3eded;
-    margin-top: 15px;
+    margin-top: 0px;
     transition: all 0.25s;
 }
 
