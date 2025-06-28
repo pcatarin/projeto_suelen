@@ -17,7 +17,19 @@
 #84A9A2
 #BAB1AC
 */
-:root
+:root {
+--seaweed: #233b14;
+--background: #ced9c7;
+--willow-grove: #697d5b;
+--finch: #5d6a4c;
+--axolotl: #4e6442;
+--mantle: #8b9e8c;
+--amulet: #8ba483;
+--woodland: #46512a;
+--black-forest: #081904;
+--finlandia: #546a54;
+
+}
 
 /*cores fundo gradiente
 #E85280
@@ -35,7 +47,7 @@
 }
 
 body {
-    background-color: #bab1ac;
+    background-color: var(--background);
     background-image: ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 100%;
@@ -53,7 +65,7 @@ header {
     height: 68px;
     width: 100%;
     text-align: center;/*Caso o text-align center não funcione aqui era só colocar em cada elemento de texto individualmente*/
-    background-color: #4c8889;
+    background-color: var(--black-forest);
     box-shadow: 0px 2px 7px 2px #0000004d; 
     z-index: 997;
     opacity: 0;
@@ -110,7 +122,7 @@ section#teste-title {
     align-items: center;
     font-family: "Jim Nightshade", cursive;
     font-size: 1.5em;
-    color: #26354C;
+    color: var(--amulet);
     row-gap: 30px;
 }
 div#teste-sub-title {
@@ -146,7 +158,7 @@ section#teste #teste-sub-title h1 {
     font-size: 2.1rem;
     justify-content: center;
     padding-bottom: 20px;
-    color: #26354C;
+    color: var(--amulet);
     text-shadow: 3px 3px 8px #090909c2;
 }
 
@@ -157,7 +169,7 @@ section#teste #teste-sub-title h2 {
     width: auto;
     height: 24px;
     font-size: 2rem;
-    color: #26354C;
+    color: var(--amulet);
     font-style: normal;
     font-weight: 200;
     width: auto;
@@ -336,7 +348,7 @@ main#principal {
 
 #hero::before {
     content: '';
-    background-image: url('../imagens/logo_principal.jpeg');
+    background-image: url('../imagens/logo_novo.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -345,7 +357,7 @@ main#principal {
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 0.3;
+    opacity: 0.6;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     /*box-shadow: 1px 1px 6px 2px #00000094;*/
