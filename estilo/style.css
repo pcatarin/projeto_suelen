@@ -879,7 +879,7 @@ button span {
     height: 5px;
     border-radius: 10px;
     background: #f3eded;
-    margin-top: 15px;
+    margin-top: 0px;
     transition: all 0.25s;
 }
 
